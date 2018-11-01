@@ -14,6 +14,7 @@ massive( process.env.CONNECTION_STRING ).then( dbInstance => {
 });
 
 app.get('/api/movies', mc.getMovies)
+app.get('/api/movies/:id', mc.getMovieById)
 app.post('/api/movies', mc.addMovie)
 app.put('/api/movies/:id', mc.editMovie)
 app.delete('/api/movies/:id', mc.deleteMovie)

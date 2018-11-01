@@ -5,6 +5,13 @@ module.exports = {
             res.status(200).send(dbRes)
         })
     },
+    getMovieById(req, res) {
+        let db = req.app.get('db')
+        let {id} = req.params
+        db.get_movie_by_id({id}).then( dbRes => {
+            res.status(200).send(dbRes)
+        })
+    },
     addMovie(req, res) {
         let db = req.app.get('db')
         let {title, description, rating} = req.body

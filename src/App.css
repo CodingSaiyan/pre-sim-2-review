@@ -22,6 +22,54 @@
   color: #61dafb;
 }
 
+.header-main-container {
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+.movies-main-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-main-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  padding: 5px;
+}
+
+.movie-detail-main-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-detail-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  padding: 5px;
+}
+
+.header-title > a {
+  text-decoration: none;
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
