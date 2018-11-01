@@ -5,7 +5,7 @@ import App from './App';
 import {HashRouter} from 'react-router-dom'
 // import * as serviceWorker from './serviceWorker';
 
-
+// We need to bring in HashRouter and wrap our App in it to make sure all of our components have access to this.props.match
 ReactDOM.render(
 <HashRouter>
     <App />
